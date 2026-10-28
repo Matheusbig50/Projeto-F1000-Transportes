@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>F1000 - Cotação de Frete</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./calculofrete.js" defer type="module"></script>
+
+    
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho"> 
+        
+        </div>
+        
+        <!--<h1 class="text_logo_f1000">F1000 Transportes</h1>
+        <p class="texto_menor_paragrafo">Sistema de Cotação de Frete</p>-->
+       <img class="logo_f1000" src="imagens/logo_sem_fundo.png" alt="image_site">
+    
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Dados da Carga</h2>
+        
+
+            <form>
+
+                <label for="vmotorista">Frete Motorista</label>
+                <input
+                    type="text"
+                    id="vmotorista"
+                    name="Frete Motorista"
+                    inputmode="decimal"
+                    autocomplete="off"
+                    placeholder="Ex.: 1.500,00"
+                >
+
+                <label for="vnota">Valor Nota Fiscal</label>
+                <input
+                    type="text"
+                    id="vnota"
+                    name="valor nota fiscal"
+                    inputmode="decimal"
+                    autocomplete="off"
+                    placeholder="Ex.: 100.000,00"
+                >
+
+                
+                <label for="vcoleta">Valor de coleta</label>
+                <input
+                    type="text"
+                    id="vcoleta"
+                    name="coleta"
+                    inputmode="decimal"
+                    autocomplete="off"
+                    placeholder="Ex.: 200,00"
+>
+
+
+                <label for="vpedagio">Valor Pedagio </label>
+                <input 
+                    type="text" 
+                    id="vpedagio" 
+                    name="pedagio"
+                    inputmode="decimal" 
+                    autocomplete="off"
+                    placeholder="Ex.: 350,00">
+
+
+        
+
+                <label for="tipoCarga">Tipo de carga</label>
+
+                <select id="tipoCarga" name="tipoCarga">
+                    <option value="">Selecione</option>
+                    <option value="dedicado">Carga dedicada</option>
+                    <option value="fracionada">Carga fracionada</option>
+                    <option value="Frete + Carregamento/Descarregamento ">Frete + Carregamento/Descarregamento</option>
+                </select>
+
+                <button type="submit"id="calculo"> 
+                Calcular Frete</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Resultado da Cotação</h2>
+
+            <div>
+                <p>Veículo recomendado:</p>
+                <strong>Aguardando cálculo...</strong>
+            </div>
+
+            <div>
+                <p>Preço de venda:</p>
+                <strong id="resultadoFrete">R$ 0,00</strong>
+            </div>
+
+            <div>
+                <p>Markup aplicado:</p>
+                <strong>1,45%</strong>
+            </div>
+
+              
+        </section>
+
+    </main>
+
+    <footer>
+    
+        <p>F1000 Transportes © 2026</p>
+    </footer>
+
+</body>
+
+</html>
