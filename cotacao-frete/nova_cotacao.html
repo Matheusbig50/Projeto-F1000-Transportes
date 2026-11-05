@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylocota.css" />
+    <title>Nova cotação</title>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="texto_sistema">
+        <h1>Sistema de Cotação Frete</h1>
+        <p>Agilidade, segurança e logística para todo o Brasil.</p>
+      </div>
+    </header>
+    <main>
+      <h2>Nova Cotação de Frete</h2>
+      <p>Preencha as informações da carga e os custos da operação.</p>
+
+      <form>
+        <section class="dados_carga">
+          <h3>Dados da carga</h3>
+
+          <p>Informe as características da mercadoria</p>
+          <div class="campos_carga">
+          <div>
+            <label for="tipocarga">Tipo de carga</label>
+            <select name="tipo_carga" id="tipocarga">
+              <option value="Carga geral">Carga geral</option>
+              <option value="Carga frágil">Carga frágil</option>
+              <option value="Carga refrigerada">Carga refrigerada</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="quantidade_volumes">Quantidade de volumes</label>
+            <input
+              type="number"
+              min="1"
+              name="quantidade_volumes"
+              id="quantidade_volumes"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="peso_total">Peso total (kg)</label>
+            <input
+              type="number"
+              name="peso_total"
+              step="any"
+              min="0.01"
+              required
+              id="peso_total"
+            />
+          </div>
+
+          <div>
+            <label for="comprimento_c">Comprimento (m)</label>
+            <input
+              type="number"
+              name="comprimento_c"
+              step="any"
+              min="0.01"
+              required
+              id="comprimento_c"
+            />
+          </div>
+
+          <div>
+            <label for="largura_m">Largura (m)</label>
+            <input
+              type="number"
+              name="largura_m"
+              step="any"
+              min="0.01"
+              required
+              id="largura_m"
+            />
+          </div>
+          <div>
+            <label for="altura_m">Altura (m)</label>
+            <input
+              type="number"
+              name="altura_m"
+              step="any"
+              min="0.01"
+              required
+              id="altura_m"
+            />
+          </div>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

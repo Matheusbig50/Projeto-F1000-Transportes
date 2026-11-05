@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    background-color: #F1F4F8;
+    
+}
+.cabecalho{
+display: flex;
+background-color: #061B38;
+justify-content: center;
+padding: 30px 15px;
+
+}
+.texto_sistema{
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.texto_sistema p{
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.texto_sistema h1{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 21px;
+    
+}
+
+.dados_carga{
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.campos_carga{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
