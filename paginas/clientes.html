@@ -13,20 +13,27 @@
                 <th scope="col">Status</th>             <!--scop ="col" indica que o título se refere a uma coluna. -->
             </tr>
         </thead>
-        <tbody>
+        <tbody id="lista_clientes">
             <tr>
                 <td>maria silva</td>               <!--td cria uma celula comum-->
                 <td>12.345.678/0001-90</td>
                 <td>(31) 99999-8888</td>
                 <td>Belo Horizonte - MG</td>
-                <td><span class="status_ativo">Ativo</span></td>
+                <td><span class="status_base status_ativo">Ativo</span></td>
             </tr>
             <tr>
                 <td>Carlos Souza</td>
                 <td>23.456.789/0001-10</td>
                 <td>(31) 98888-7777</td>
                 <td>Betim - MG</td>
-                <td><span class="status_inativo">inativo</span></td>
+                <td><span class="status_base status_inativo">inativo</span></td>
+            </tr>
+            <tr>
+                <td>Carlos Souzera</td>
+                <td>23.456.789/0001-10</td>
+                <td>(31) 98888-7777</td>
+                <td>Betim - MG</td>
+                <td><span class="status_base status_pendente">pendente</span></td>
             </tr>
         </tbody>
     </table>

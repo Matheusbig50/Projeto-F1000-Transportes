@@ -142,6 +142,12 @@ body {
     font-family: "inter", sans-serif;
     font-weight: 700;
 }
+.cartao_clientes{
+    background-color: var(--cor-cartao);
+    border-radius: 15px;
+    padding: 20px;
+
+}
 /* tabela stilização*/
 table{
     width: 100%;
@@ -155,6 +161,9 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
     background-color:var(--cor-paresTabela);
     
+}
+#lista_clientes tr:nth-child(odd) {
+    background-color: var(--cor-paresTabela)
 }
 tbody td {  /*registros clienta...situação*/
     color: var(--cor-cardInput);
@@ -203,16 +212,20 @@ thead th:first-child{
 /*na tela cliente status_ativo*/
 .status_ativo {
     background-color: var(--cor-status_ativo);
-    border-radius: 15px;
-    padding: 5px 12px;
-    color: var(--cor-cartao);
 }
 .status_inativo {
-    background-color:var(--cor-text);
+    background-color:var(--cor-text);  
+}
+.status_pendente {
+    background-color: var(--cor-terciaria);
+}
+.status_base {
     border-radius: 15px;
     padding: 5px 12px;
-    color: var(--cor-cartao);
+    color: var(--cor-cartao);       
 }
 .cartao_clientes h2 {
     font-family: 'inter', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 32px;
 }
