@@ -21,7 +21,7 @@
                 <li><a href="Rotas e Tabelas"><i class="fa-solid fa-route"></i>Rotas e Tabelas</a></li>
                 <li><a href="Cadastros"><i class="fa-solid fa-clipboard-list"></i>Cadastros</a></li>
                 <li><a href="Configuracoes"><i class="fa-solid fa-gear"></i>Configurações</a></li>
-                <li><a href="clientes"><i class="fa-solid fa-users"></i>Clientes</a></li>
+                <li><a href="paginas/clientes.html"><i class="fa-solid fa-users"></i>Clientes</a></li>
                 <li><a href="relatorios"><i class="fa-regular fa-file"></i>Relatórios</a></li>
             </ul>
             <div class="cartao_suporte">
@@ -35,17 +35,75 @@
 
         <div class="conteudo_principal">
             <header class="cabecalho">
-
+                <h1>Sistema de Cotação de Frete</h1>
             </header>
-            <main class="area_de_trabalho">
-                <h1>Òla mundo</h1>
 
+            <main class="area_de_trabalho" id="conteudo">
+                <h1>Histórico de Cotações</h1>
+                <p>Estrutura preparada para evolução do sistema F1000.</p>
+                <div class="cartao_historico">
+                    <h2>Pesquisa, filtros e registros</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">numero</th>
+                                <th scope="col">Clientes</th>
+                                <th scope="col">Origen / destino</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">Situação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Registro 1</th>
+                                <td>maria</td>
+                                <td>Belo Horizonte / Salvador</td>
+                                <td>R$ 1.233,00</td>
+                                <td>carga completa</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Registro 2</th>
+                                <td>Carlos</td>
+                                <td>Belo Horizonte / Sergipe</td>
+                                <td>R$ 2.233,00</td>
+                                <td>Em transporte</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Registro 3</th>
+                                <td>cleifane</td>
+                                <td>Belo Horizonte / betim</td>
+                                <td>R$ 2.233,00</td>
+                                <td>Em transporte</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Registro 4</th>
+                                <td>Lucas</td>
+                                <td>betim / contagem</td>
+                                <td>R$ 2.555,00</td>
+                                <td>Em transporte</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Registro 5</th>
+                                <td>Caio</td>
+                                <td>Betim / ribeirão das neves</td>
+                                <td>R$ 2.444,00</td>
+                                <td>Em transporte</td>
+                            </tr>
+                        </tbody>
+
+
+
+
+
+
+                    </table>
+                </div>
             </main>
 
         </div>
 
     </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
